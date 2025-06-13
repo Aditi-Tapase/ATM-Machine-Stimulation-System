@@ -19,7 +19,6 @@ A Spring Boot-based RESTful application that simulates basic ATM operations like
 <br> 
 ## 🛠️ Tech Stack
 <br> 
-| Layer         | Technology                        <br>
 
 | Language--------Java 17                           <br>
 | Framework-------Spring Boot 3.5.0                   <br>
