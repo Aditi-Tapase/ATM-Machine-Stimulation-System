@@ -1,6 +1,6 @@
 # 🏧 ATM Machine Simulation System
 <br>
-A Spring Boot-based RESTful application that simulates basic ATM operations like user registration, login with JWT authentication, balance inquiry, deposits, withdrawals, and transaction history.
+A backend + frontend project simulating ATM functionalities such as user registration, login with JWT authentication, balance inquiry, deposits, withdrawals, and transaction history.  Built with Spring Boot, MySQL, JPA, and plain HTML/CSS/JavaScript
 <br>
 
 
@@ -20,25 +20,31 @@ A Spring Boot-based RESTful application that simulates basic ATM operations like
 ## 🛠️ Tech Stack
 <br> 
 
-| Language--------Java 17                           <br>
-| Framework-------Spring Boot 3.5.0                   <br>
-| ORM-------------Spring Data JPA / Hibernate         <br>
-| Security--------Spring Security + JWT               <br>
-| Database--------MySQL                               <br>
-| Build Tool------Maven                               <br>
-| API Test Tool---Postman                            <br>
+| Language-------- Java 17                           <br>
+| Framework------- Spring Boot 3.5.0                   <br>
+| ORM------------- Spring Data JPA / Hibernate         <br>
+| Security-------- Spring Security + JWT               <br>
+| Database-------- MySQL                               <br>
+| Frontend-------- HTML, CSS, JavaScript               <br>
+| Build Tool------ Maven                               <br>
+| API Test Tool--- Postman                            <br>
 
 ---
 <br>
 ## ⚙️ Project Structure
 <br> 
-atm-simulation/                                 <br>
-├── controller/ # REST Controllers               <br>
-├── dto/ # DTO classes for requests/responses        <br>
-├── model/ # Entity classes                  <br>
-├── repository/ # DAO layer                  <br>
-├── service/ # Business logic                 <br>
-├── security/ # JWT & Security config            <br>
-├── resources/                                   <br>
-│ ├── application.properties            <br>
-├── pom.xml                                  <br>
+atm-simulation/                                     <br>
+├── src/                                             <br>
+│ ├── main/                                            <br>
+│ │ ├── java/com/example/atm/                         <br>
+│ │ │ ├── controller/ → REST APIs                       <br>
+│ │ │ ├── model/ → User, Transaction, ATM entities        <br>
+│ │ │ ├── repository/ → JPA Repositories                <br>
+│ │ │ ├── service/ → Business logic                   <br>
+│ │ │ └── AtmApplication.java                            <br>
+│ └── resources/                                     <br>
+│ └── application.properties                         <br>
+├── frontend/                                    <br>
+│ ├── index.html                                <br>
+│ └── script.js                                        <br>
+└── README.md                                  <br>
