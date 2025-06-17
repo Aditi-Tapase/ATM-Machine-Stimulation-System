@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATM Machine</title>
+</head>
+<body>
+  <h1>ATM Simulation</h1>
+
+  <!-- Register -->
+  <h2>Register</h2>
+  <input type="text" id="regCard" placeholder="Card Number">
+  <input type="password" id="regPin" placeholder="PIN">
+  <button onclick="register()">Register</button>
+  <p id="regMsg"></p>
+
+  <!-- Login -->
+  <h2>Login</h2>
+  <input type="text" id="loginCard" placeholder="Card Number">
+  <input type="password" id="loginPin" placeholder="PIN">
+  <button onclick="login()">Login</button>
+  <p id="loginMsg"></p>
+
+  <!-- Check Balance -->
+  <h2>Check Balance</h2>
+  <input type="text" id="balCard" placeholder="Card Number">
+  <button onclick="checkBalance()">Check</button>
+  <p id="balMsg"></p>
+
+  <!-- Deposit -->
+  <h2>Deposit</h2>
+  <input type="text" id="depCard" placeholder="Card Number">
+  <input type="number" id="depAmt" placeholder="Amount">
+  <button onclick="deposit()">Deposit</button>
+  <p id="depMsg"></p>
+
+  <!-- Withdraw -->
+  <h2>Withdraw</h2>
+  <input type="text" id="withCard" placeholder="Card Number">
+  <input type="number" id="withAmt" placeholder="Amount">
+  <button onclick="withdraw()">Withdraw</button>
+  <p id="withMsg"></p>
+
+  <!-- Transactions -->
+  <h2>Transaction History</h2>
+  <input type="text" id="txnCard" placeholder="Card Number">
+  <button onclick="getTransactions()">View</button>
+  <ul id="txnList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

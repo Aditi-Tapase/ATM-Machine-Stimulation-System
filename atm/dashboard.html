@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM Dashboard</title>
+</head>
+<body>
+  <h2>Welcome</h2>
+
+  <button onclick="checkBalance()">Check Balance</button>
+  <p id="balanceResult"></p>
+
+  <h3>Deposit</h3>
+  <input type="number" id="depositAmount">
+  <button onclick="deposit()">Deposit</button>
+
+  <h3>Withdraw</h3>
+  <input type="number" id="withdrawAmount">
+  <button onclick="withdraw()">Withdraw</button>
+
+  <h3>Transactions</h3>
+  <button onclick="getTransactions()">Show Transactions</button>
+  <ul id="transactionList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
